@@ -7,6 +7,10 @@ app.get('/', (req, res, next) => {
     res.json({ message: "Servidor executado com sucesso!" });
 
 })
+app.get('/users', (req, res, next) => {
+    res.json({ message: "Rodando com sucesso!" });
+
+})
 
 var server = http.createServer(app);
 server.listen(port);
